@@ -47,7 +47,7 @@ def get_db():
 
 router = APIRouter()
 bcrypt_context = CryptContext(schemes=['bcrypt'],deprecated = "auto")
-oAuth2_bearer = OAuth2PasswordBearer(tokenUrl='login')
+oAuth2_bearer = OAuth2PasswordBearer(tokenUrl='/login')
 SECRET_KEY = "8e484fb160b3165eac1f581dd8b7a873f91920d45e3ff37bdad93523d71427c0"
 ALGORITHM = "HS256"
 
